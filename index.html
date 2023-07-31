@@ -346,8 +346,12 @@
 
       button.addEventListener('click', ()=>{
         button.value = "Sending...";
-        button.disabled = true;
-        button.classList.remove('inphover');
+        setTimeout(()=>{
+            button.disabled = true;
+            button.classList.remove('inphover');
+        },1000)
+        
+       
       })
 
       form.addEventListener('submit', e => {
