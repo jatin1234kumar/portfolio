@@ -312,6 +312,7 @@ body > * {
     color: #D61C4E;
 }
 
+/* Navbar ends */
 
 /*  section features */
 
@@ -366,6 +367,7 @@ body > * {
     width: 60%;
     margin: auto;
 }
+/* feature section ends */
 
 /* section about */
 
@@ -536,6 +538,8 @@ p .about-a:hover {
     color: #04c2c9;
 }
 
+/* about section ends */
+
 /* projects section */
 
 .project-container {
@@ -615,6 +619,8 @@ p .about-a:hover {
     cursor: pointer;
     color: #fff;
 }
+
+/* about section ends */
 
 /* Contact Section */
 
@@ -744,12 +750,12 @@ p .about-a:hover {
 .contactForm .inputBox textarea:focus ~ span,
 .contactForm .inputBox input:valid ~ span,
 .contactForm .inputBox textarea:valid ~ span {
-    color: #e91e63;
+    color: #00bcd4;
     font-size: 12px;
     transform: translateY(-20px);
 }
 
-.ContactButton input[type="submit"] {
+.ContactButton .inpmsg{
     background-color: #fff;
     border: 2px solid #444;
     color: #000;
@@ -766,7 +772,16 @@ p .about-a:hover {
     width: 100%;
 }
 
-.ContactButton input[type=submit]:hover {
+.sentmsg {
+    color: #00bcd4;
+    opacity: 1;
+    display: none;
+    margin-top: 10px;
+    transition: opacity 1s,
+                display 1s;
+}
+
+.ContactButton .inphover:hover {
     background-color: #00bcd4;
     color: #fff;
     border-color: #00bcd4;

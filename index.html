@@ -279,19 +279,20 @@
                 <form class="contactFormBox" name="submit-to-google-sheet">
                     <h2>Send Message</h2>
                     <div class="inputBox">
-                        <input type="text" name="Name" id="name" required>
+                        <input type="text" name="Name" id="name" required autocomplete="off">
                         <span>Your Name</span>
                     </div>
                     <div class="inputBox">
-                        <input type="email" name="Email" id="email" required>
+                        <input type="email" name="Email" id="email" required autocomplete="off">
                         <span>Your Email</span>
                     </div>
                     <div class="inputBox">
-                        <textarea type="text" name="Message" id="message" required></textarea>
+                        <textarea type="text" name="Message" id="message" required autocomplete="off"></textarea>
                         <span>Message</span>
                     </div>
                     <div class="ContactButton">
-                        <input class="inpmsg" type="submit" value="submit">
+                        <input class="inpmsg inphover" type="submit" id="button" value="submit">
+                        <span class="sentmsg" id="msg">Message Sent Successfully!</span>
                     </div>
                 </form>
             </div>
@@ -334,6 +335,48 @@
           document.body.className = document.body.className.replace("js-loading","");
         }
       </script>
+
+      <!-- contact form working -->
+
+      <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyeB_fpElcbtfoE2kcghJDYq4W_u5_-_XwpUnUDRE8-ka14m1AqoIBBEPpaeHS1Mrlw/exec'
+      const form = document.forms['submit-to-google-sheet'];
+      const msg = document.getElementById('msg');
+      const button = document.getElementById('button');
+
+      button.addEventListener('click', ()=>{
+        button.value = "Sending...";
+        button.disabled = true;
+        button.classList.remove('inphover');
+      })
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.style.display = "block";
+            button.value = "SUBMIT";
+            button.disabled = false;
+            button.classList.add('inphover');
+            setTimeout(() => {
+              msg.style.display = "none";
+            }, 5000);
+            form.reset();
+          })
+          .catch(error => {
+            msg.style.display = "block";
+            button.value = "SUBMIT";
+            button.disabled = false;
+            button.classList.add('inphover');
+            msg.innerHTML = "Error!";
+            msg.style.color = "red";
+            setTimeout(() => {
+              msg.style.display = "none";
+            }, 5000);
+            form.reset();
+          })
+      })
+    </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="script.js"></script>
