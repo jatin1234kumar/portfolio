@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>webpage</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/9bfd7b5662.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav id="nav" class="">
+      <div id="nav-logo-section" class="nav-section">
+        <a href="#">
+          <i class="fa-solid fa-dumpster-fire"></i>
+        </a>
+      </div>
+      <div id="nav-link-section" class="nav-section">
+        <a href="#">About</a>
+        <a href="#">Work</a>
+      </div>
+      <div id="nav-social-section" class="nav-section">
+        <a href="#">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-codepen"></i>
+        </a>
+      </div>
+      <div id="nav-contact-section" class="nav-section">
+        <a href="#"> GET IN TOUCH </a>
+      </div>
+      <div id="nav-menu-section" class="nav-section">
+        <a href="javascript:void(0)" onclick="showmenu()">
+          menu <i class="fa-solid fa-burger"></i>
+        </a>
+      </div>
+    </nav>
+
+    <main>
+      <article data-index="0" data-status="active">
+        <div
+          class="article-section article-image-section"
+          style="background: url('ASSETS/1.jpg')"
+        ></div>
+
+        <div class="article-section article-description-section">
+          <p>
+            This is a from scratch recreation of
+            <a href="#">dylanbruwe design/work.</a> See how I did it
+            <span>▶</span>.
+          </p>
+        </div>
+
+        <div class="article-section article-title-section">
+          <h2>RECREATION FROM SCRATCH</h2>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+
+        <div class="article-section article-nav-section">
+          <a
+            href="javascript:void(0)"
+            class="btn carousel-prev"
+            onclick="handleLeftClick()"
+          >
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+          <a
+            href="javascript:void(0)"
+            class="btn carousel-next"
+            onclick="handleRightClick()"
+          >
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </article>
+
+      <article data-index="1" data-status="inactive">
+        <div
+          class="article-section article-image-section"
+          style="background: url('ASSETS/2.jpg')"
+        ></div>
+        <div class="article-section article-description-section">
+          <p>
+            This is just a webpage copy of a cool looking website on the
+            internet and it is Awesome.
+          </p>
+        </div>
+        <div class="article-section article-title-section">
+          <h2>WORK OF CREATION</h2>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="article-section article-nav-section">
+          <a
+            href="javascript:void(0)"
+            class="btn carousel-prev"
+            onclick="handleLeftClick()"
+          >
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+          <a
+            href="javascript:void(0)"
+            class="btn carousel-next"
+            onclick="handleRightClick()"
+          >
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </article>
+
+      <article data-index="2" data-status="inactive">
+        <div
+          class="article-section article-image-section"
+          style="background: url('ASSETS/3.jpg')"
+        ></div>
+        <div class="article-section article-description-section">
+          <p>
+            I feel love in making this webpage for real. I get to know various
+            things in making this webpage.
+          </p>
+        </div>
+        <div class="article-section article-title-section">
+          <h2>CREATION IS LOVE</h2>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="article-section article-nav-section">
+          <a
+            href="javascript:void(0)"
+            class="btn carousel-prev"
+            onclick="handleLeftClick()"
+          >
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+          <a
+            href="javascript:void(0)"
+            class="btn carousel-next"
+            onclick="handleRightClick()"
+          >
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </article>
+
+      <article data-index="3" data-status="inactive">
+        <div
+          class="article-section article-image-section"
+          style="background: url('ASSETS/4.jpg')"
+        ></div>
+        <div class="article-section article-description-section">
+          <p>
+            Want to work with me then there are some contact detail of mine on
+            the top and I'll see you in my DM.
+          </p>
+        </div>
+        <div class="article-section article-title-section">
+          <h2>lOVE IS EVERYTHING</h2>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="article-section article-nav-section">
+          <a
+            href="javascript:void(0)"
+            class="btn carousel-prev"
+            onclick="handleLeftClick()"
+          >
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+          <a
+            href="javascript:void(0)"
+            class="btn carousel-next"
+            onclick="handleRightClick()"
+          >
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </article>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

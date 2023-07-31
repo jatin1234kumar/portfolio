@@ -1,0 +1,81 @@
+body {
+    font-family: serif;
+}
+
+.jumbotron {
+    background: none;
+    text-align: center;
+}
+
+.section-light {
+    background-color: #eceeef;
+    padding: 2rem;
+}
+
+.sectionDark {
+    background-color: #cccccc;
+    padding: 2rem;
+}
+
+.coolstuff {
+    margin: 20px;
+}
+
+button.coolstuffbtn {
+    background-color: red;
+    color: #fff;
+    display: block;
+    margin: auto;
+}
+
+h5.modal-title {
+    margin: auto;
+}
+
+.modelform {
+    padding: 2rem;
+    padding-bottom: 1rem;
+}
+
+.imgCenter {
+    display: block;
+    margin: auto;
+}
+
+.btncenter {
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 71%;
+}
+
+.vediofooter {
+    text-align: center;
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+.footerimg {
+    padding: 15px;
+}
+
+.fa {
+  margin: 10px;
+}
+
+.fa-facebook-square {
+  color: #3b5998;
+}
+
+.fa-google-plus-square {
+  color: #c32f10;
+}
+
+.fa-instagram {
+  color: #ffffff;
+}
+
+.socialWrapper {
+  margin: auto;
+}
