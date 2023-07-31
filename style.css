@@ -1131,6 +1131,10 @@ p .about-a:hover {
 
     /* Heading section ends */
 
+    .contactContainer {
+        width: 100%;
+    }
+
     .Button {
         padding: 0.6rem 1rem;
         font-size: 15px;
