@@ -30,7 +30,7 @@ body {
     display: block;
     background-color: #fff;
     position: fixed;
-    z-index: 999;
+    z-index: 10;
     margin: 0;
     width: 100%;
     height: 3.5rem;
@@ -137,7 +137,6 @@ header {
     text-align: center;
     padding: 10rem 0 7rem 0;
     position: relative;
-    z-index: -1;
 }
 
 /* service section starts */
@@ -198,7 +197,6 @@ header {
     justify-content: center;
     margin-top: 3rem;
     position: relative;
-    z-index: 0;
 }
 
 .Button {
@@ -233,11 +231,10 @@ header {
     justify-content: space-around;
     text-align: center;
     position: relative;
-    z-index: -1;
 }
 
 .card {
-    margin: 0 .5rem 1.5rem;
+    margin: 0 .7rem 2rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
@@ -265,12 +262,33 @@ form lable {
 
 .submit-btn {
     margin-top: 2rem;
-}
+}   
 
 .head {
     margin-bottom: 2rem;
 
 }
+
+/* Project section  starts */
+
+.linkButton {
+    border: none;
+    outline: none;
+    font-size: .8rem;
+    padding: 8px 12px;
+    background-color: #66b6d3;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.linkButton:hover {
+    text-decoration: none;
+    color: white;
+}
+
+/* Project section  ends*/
 
 /* Contact Page */
 

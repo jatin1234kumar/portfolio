@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=no"
+  />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Thanks for subscribing! A confirmation email has been sent to
+    ash@loremcompany.com. Please open it and click the button inside to confirm
+    your subscription. Dismiss message -->
+
+    <section>
+      <div class="parent">
+        <div class="child1">
+          <form>
+            <h1>Stay updated!</h1>
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
+            <p>
+              <img src="assets/images/icon-list.svg" />Product discovery and
+              building what matters
+            </p>
+            <p>
+              <img src="assets/images/icon-list.svg" />Measuring to ensure
+              updates are a success
+            </p>
+            <p><img src="assets/images/icon-list.svg" /> And much more!</p>
+
+            <div class="labelBox">
+              <label>Email address</label>
+              <label class="invalid" id="emai-error"
+                >Valid email required</label
+              >
+            </div>
+            <input
+              type="email"
+              placeholder="email@company.com"
+              autocomplete="off"
+              spellcheck="false"
+              id="emai-field"
+              onkeyup="validateEmail()"
+              class=""
+            />
+
+            <button>Subscribe to monthly newsletter</button>
+          </form>
+        </div>
+        <div class="child2">
+          <img src="assets/images/illustration-sign-up-desktop.svg" />
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const email = document.getElementById("emai-field");
+      const error = document.getElementById("emai-error");
+
+      function validateEmail() {
+        if (!email.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+          error.classList.add("animate");
+          email.classList.add("red-input");
+          return false;
+        } else {
+          error.classList.remove("animate");
+          email.classList.remove("red-input");
+          return true;
+        }
+      }
+    </script>
+
+    <!-- Success message end
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Jatin kumar</a>.
+    </div> -->
+  </body>
+</html>

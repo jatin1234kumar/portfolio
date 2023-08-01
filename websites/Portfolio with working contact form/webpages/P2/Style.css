@@ -1,0 +1,44 @@
+.logo {
+    border-radius: 50%;
+}
+
+body.body {
+    background-color: #e6f2ff;
+}
+
+.container {
+   margin-top: 8%; 
+}
+
+.card.signincard {
+    padding: 40px 0px 20px;
+    background-color: #f4f4f4;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+}
+
+img.sign-in-logo {
+    display: block;
+    margin: auto;
+    padding: 0 2rem 2rem;
+    width: 50%;
+    margin-bottom: -1rem;
+}
+
+.form {
+    max-width: 350px;
+    margin: auto;
+}
+
+button.sign-in-button {
+    color: #fff;
+    background-color: #d64829;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+a.sign-in-lable {
+    display: block;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 0.7rem;
+}

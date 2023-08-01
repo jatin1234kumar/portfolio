@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+p, h1, h2, h3, a {
+    color: black;
+}
+
+span {
+    color: orangered;
+}
+
+section {
+    width: 100%;
+}
+
+.parent {
+    width: 90%;
+    height: auto;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.parent .child1 {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.parent .child1 form {
+    flex: 1;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding:0 2rem 0 4rem;
+}
+
+.parent .child1 form h2 {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.parent .child1 form p {
+    color: black;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.parent .child1 form input {
+    width: 70%;
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 10px 0;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.parent .child1 form button {
+    padding: 10px;
+    width: 8rem;
+    color: white;
+    background-color: orangered;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.parent .child1 .infobox {
+    width: 100%;
+    height: 75%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+    justify-content: center !important;
+    text-align: left;
+    background-color: black;
+    padding:0 2rem;
+    margin-right: 2rem;
+}
+
+.parent .child1 .infobox h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.parent .child1 .infobox p {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.parent .child2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    background-color: orangered;
+    padding:0 2rem;
+}
+
+.parent .child1 .colorBOx {
+    flex: 1;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: orangered;
+    position: absolute;
+    top: 0;
+    right: -75%;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 1337px){
+    .parent .child1 form input {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 840px){
+    section {
+        
+    }
+
+    .parent {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+        background-color: orangered;
+    }
+
+    .parent .child1 {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        
+    }
+
+    .parent .child1 form {
+        flex: 1;
+        display: flex;
+        width: 100%;
+        height: 50vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        padding:2rem 2rem 2.5rem 2.5rem;
+    }
+
+    .parent .child1 form input {
+    width: 90%;
+}
+    
+    .parent .child1 .infobox {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        padding:2rem;
+        width: 88%;
+        height: 40%;
+        position: absolute;
+        left: 6%;
+        top: 50%;
+        z-index: 1;
+    }
+
+    .parent .child1 .colorBOx {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: orangered;
+        position: absolute;
+        left: 0;
+        top: 70%;
+        width: 100%;
+        height: 20rem;
+    }
+
+}
+

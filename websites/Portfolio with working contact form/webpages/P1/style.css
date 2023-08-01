@@ -1,0 +1,186 @@
+:root {
+    --bg-color: rgb(54,56,77);
+    --h-color: rgb(30,33,60);
+    --p-color: rgb(86,85,101);
+    --grey-color: hsl(231, 7%, 60%);
+    --tomato : hsl(4, 100%, 67%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: var(--bg-color);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+.parent {
+    width: 48rem;
+    margin: 8% auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    background-color: white;
+    color: var(--h-color);
+    padding: 1.2%;
+}
+
+.parent .child1 {
+    flex: 1;
+    padding: 2%;
+}
+
+.parent .child1 form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.parent .child1 form h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.parent .child1 form .firstpera{
+    margin-bottom: 1.2rem;
+}
+
+.parent .child1 form p {
+    position: relative;
+    margin-bottom: .8rem;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.parent .child1 form p img {
+    margin-right: 1rem;
+    width: 1rem;
+    height: 1rem;
+    display: inherit;
+    align-self: flex-end;
+}
+
+.parent .child1 form .labelBox {
+    margin-top: 1rem;
+    margin-bottom: 5px;
+    display: inherit;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.parent .child1 form label {
+    font-size: 12px;
+    color: var(--bg-color);
+    font-weight: bold;
+}
+
+.parent .child1 form .invalid {
+    color: var(--tomato);
+    opacity: 0;
+    transform: translateY(1rem);
+    transition: opacity .5s,
+                transform .5s;
+}
+
+.parent .child1 form .invalid.animate {
+    opacity: 1;
+    transform: none;
+}
+
+.parent .child1 form input {
+    width: 100%;
+    padding: 12px;
+    color: grey;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid hwb(0 89% 9%);
+    margin-bottom: 1rem;
+    font-size: 14px;
+}
+
+.red-input {
+    border-color: var(--tomato) !important;
+    color: var(--tomato) !important;
+    background-color: pink;
+    transition: border-color 1s,
+                color .6s,
+                background-color .8s;
+}
+
+.parent .child1 form button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--bg-color);
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    transition: background-color .5s;
+    cursor: pointer;
+}
+
+.parent .child1 form button:hover {
+    background-color: var(--tomato);
+}
+
+.parent .child2 {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.parent .child2 img {
+    width: 90%;
+    height: auto;
+}
+
+@media only screen and (max-width: 834px) {
+    .parent {
+        flex-direction: column;
+        width: 28rem;
+        height: 43rem;
+        overflow: hidden;
+        padding: 0;
+        position: relative;
+    }
+
+    .parent .child1 {
+        order: 2;
+        padding: 4%;
+    }
+
+    .parent .child2 {
+        order: 1;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .parent .child2 img {
+        position: absolute;
+        top: -55%;
+        left: 0;
+        width: 100%;
+    }
+}
