@@ -24,22 +24,52 @@
   </head>
 
   <body id="home">
-    <div class="container-fluid">
-      <nav class="navbar">
-        <a href="#home" class="logo-ancor">
-          <div class="brand">Kumar<span class="sensai">Jatin</span></div>
-        </a>
+
+    <div class="navcontainer">
+      <a href="#home" class="logo-ancor">
+        <div class="brand">Kumar<span class="sensai">Jatin</span></div>
+      </a>
+
+      <div class="navBar">
         <ul class="topnav" id="navbar-toggle">
           <li><a class="nav-link" href="#Home">Home</a></li>
           <li><a class="nav-link" href="#Blogs">Blogs</a></li>
           <li><a class="nav-link" href="#Works">Works</a></li>
           <li><a class="nav-link" href="#contact">Contact</a></li>
-          <li class="dropdownLink">
-            <a onclick="toggleDropdown()" href="javascript:void(0)">&#9776;</a>
-          </li>
         </ul>
-      </nav>
+      </div>
+
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <div class="overlay-content">
+          <a href="#Home" class="navLink" onclick="closeNav()">Home</a>
+          <a href="#Blogs" class="navLink" onclick="closeNav()">Blogs</a>
+          <a href="#Works" class="navLink" onclick="closeNav()">Works</a>
+          <a href="#contact" class="navLink" onclick="closeNav()">Contact</a>
+        </div>
+      </div>
+  
+      <span
+        style="
+          font-size: 30px;
+          cursor: pointer;
+          position: absolute;
+          top: 25px;
+          right: 25px;
+        "
+        class="hamburger"
+        onclick="openNav()"
+      >
+        &#9776;</span
+      >
+
     </div>
+
+   
+
+    <!-- Nav section -->
 
     <header id="Home">
       <div class="headershot-wrap">
@@ -63,10 +93,10 @@
           <div class="blurb-wraper-right" data-aos="fade-left">
             <h3 class="blurb-header">Scalable code</h3>
             <div class="blurb-info">
-              This is just a dummy text just to make this webpage look good and 
-              the importand part is that most of the peope won't read it. If you are 
-              reading it then in simple words you are wasting your precious time.
-              This is a scalable code.
+              This is just a dummy text just to make this webpage look good and
+              the importand part is that most of the peope won't read it. If you
+              are reading it then in simple words you are wasting your precious
+              time. This is a scalable code.
             </div>
           </div>
         </div>
@@ -77,9 +107,10 @@
           <div class="blurb-wraper-left" data-aos="fade-right">
             <h3 class="blurb-header">The Other Cool Atributes</h3>
             <div class="blurb-info">
-              The other cool atributes of this website is that it contains some of my projects
-              not all projects. If you are intrested in making a deal with me for your personal webpages 
-              then you can contact me I'll make you sure that I would reply as soon as possible.
+              The other cool atributes of this website is that it contains some
+              of my projects not all projects. If you are intrested in making a
+              deal with me for your personal webpages then you can contact me
+              I'll make you sure that I would reply as soon as possible.
             </div>
           </div>
         </div>
@@ -90,9 +121,10 @@
           <div class="blurb-wraper-right" data-aos="fade-left">
             <h3 class="blurb-header">Freelenser</h3>
             <div class="blurb-info">
-              In simple words I would like to say that I'm a person with no industries working experience but 
-              I can make you sure that if you give me a word on making portfolio or webdesigns then
-              I would do your work as fast as I can.
+              In simple words I would like to say that I'm a person with no
+              industries working experience but I can make you sure that if you
+              give me a word on making portfolio or webdesigns then I would do
+              your work as fast as I can.
             </div>
           </div>
         </div>
@@ -238,7 +270,7 @@
       </div>
     </section>
 
-    <section id="contact" style="margin-top: 2rem;">
+    <section id="contact" style="margin-top: 2rem">
       <div class="firstbox">
         <h1>Contact <span>Us</span></h1>
         <p>
@@ -285,6 +317,18 @@
     <footer>
       <p>Made with ❤ by Jatin</p>
     </footer>
+
+    <!-- javascript for new navbar -->
+
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.height = "100vh";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+      }
+    </script>
 
     <!-- animation script -->
 

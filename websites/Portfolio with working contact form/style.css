@@ -10,14 +10,124 @@ body {
     margin: auto;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* navbar styling */
+
 .logo-ancor {
     text-decoration: none;
     cursor: pointer;
+    position: absolute;
+    top: 15px;
+    left: 100px;
     font-size: 24px;
 }
 .logo-ancor:hover {
     text-decoration: none;
 }
+
+.brand {
+    text-transform: uppercase;
+    color: #303137;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.sensai {
+    color: #66b6d3;
+    text-decoration: none;
+}
+
+.topnav {
+    display: flex;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 15px;
+    right: 100px;
+}
+
+.nav-link {
+    text-decoration: none;
+    padding-left: 20px;
+    text-transform: uppercase;
+    color: #303137;
+    color: #777;
+    font-size: 24px;
+    display: block;
+}
+
+.nav-link:hover {
+    color: #000;
+    transition: color 0.6s;
+}
+
+
+/* new nav bar starts */
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    line-height: 1.5;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+
+  .hamburger {
+    display: none;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+/* new nav bar ends */
+
+
 
 .navbar,
 .container {
@@ -26,7 +136,7 @@ body {
     margin: 0 auto;
 }
 
-.container-fluid {
+.navcontainer {
     display: block;
     background-color: #fff;
     position: fixed;
@@ -53,45 +163,6 @@ body {
         opacity: 1;
         transform: none;
     }
-}
-
-.brand {
-    text-transform: uppercase;
-    color: #303137;
-    margin-top: 10px;
-    text-decoration: none;
-}
-
-.sensai {
-    color: #66b6d3;
-    text-decoration: none;
-}
-
-.topnav {
-    display: flex;
-    margin: 0;
-    margin-top: 10px;
-    padding: 0;
-    list-style: none;
-}
-
-.nav-link {
-    text-decoration: none;
-    padding-left: 20px;
-    text-transform: uppercase;
-    color: #303137;
-    color: #777;
-    font-size: 24px;
-    display: block;
-}
-
-.nav-link:hover {
-    color: #000;
-    transition: color 0.6s;
-}
-
-.dropdownLink {
-    display: none;
 }
 
 header {
@@ -451,56 +522,26 @@ footer p {
     font-size: .8rem;
 }
 
-
-
-
-
-
 /* phone */
 
-@media (max-Width: 768px) {
-    .container-fluid:active {
-        width: 100%;
-        height: 35%;
+@media only screen and (max-width: 816px) {
+    .hamburger {
+        display: block;
     }
 
-    .container-fluid:visited {
-        width: 100%;
-        height: 35%;
-    }
-
-    ul.topnav li a.nav-link {
+    .navBar {
         display: none;
     }
 
-    ul.topnav li.dropdownLink {
-        display: block;
-        position: absolute;
-        top: 15px;
-        right: 20px;
+    .logo-ancor {
+        left: 15px;
     }
+}
 
-    ul.topnav.responsive li.dropdownLink {
-        position: absolute;
-        top: 15px;
-        right: 20px;
-    }
 
-    ul.topnav.responsive {
-        flex-direction: column;
-        text-align: right;
-    }
+@media (max-Width: 768px) {
 
-    ul.topnav.responsive li {
-        position: relative;
-        top: 30px;
-        right: 30px;
-    }
-
-    ul.topnav.responsive li a.nav-link {
-        display: block;
-        line-height: 2;
-    }
+    
 
     a {
         text-decoration: none;
