@@ -148,23 +148,20 @@ section {
 }
 
 @media only screen and (max-width: 840px){
-    section {
-        
-    }
 
     .parent {
         display: flex;
         flex-direction: column;
-        width: 90%;
-        height: 100vh;
+        width: 20rem;
+        height: 45rem;
         position: relative;
         overflow: hidden;
         background-color: orangered;
     }
 
     .parent .child1 {
-        width: 100%;
-        height: 100vh;
+        width: 20rem;
+        height: 45rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -178,10 +175,8 @@ section {
         flex: 1;
         display: flex;
         width: 100%;
-        height: 50vh;
         position: absolute;
         top: 0;
-        left: 0;
         flex-direction: column;
         align-items: flex-start;
         padding:2rem 2rem 2.5rem 2.5rem;
@@ -218,3 +213,26 @@ section {
 
 }
 
+@media only screen and (max-width: 350px) {
+    section {
+        padding: 0 10px;
+    }
+
+    .parent {
+        width: 100%;
+        height: 45rem;
+    }
+
+    .parent .child1 {
+        width: 100%;
+        height: 45rem;
+    }
+
+    .parent .child1 form {
+        padding:2rem;
+    }
+
+    .parent .child1 form input {
+        width: 100%;
+    }
+}
