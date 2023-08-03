@@ -469,7 +469,7 @@ p .about-a:hover {
 }
 
 .range-1 {
-    width: 100%;
+    width: 97%;
 }
 
 .range-2 {
@@ -489,7 +489,7 @@ p .about-a:hover {
 }
 
 .range-6 {
-    width: 100%;
+    width: 95%;
 }
 
 .range-7 {
@@ -505,7 +505,7 @@ p .about-a:hover {
 }
 
 .range-10 {
-    width: 100%;
+    width: 90%;
 }
 
 .small-div {
@@ -1136,6 +1136,10 @@ p .about-a:hover {
 @media (max-width: 428px) {
      /* Heading section */
 
+     
+element.style {
+}
+
      .header-content .banner-h {
         font-size: 1.9rem;
     }
@@ -1146,6 +1150,10 @@ p .about-a:hover {
 
     /* Heading section ends */
 
+    .heading {
+        margin: 3rem auto 1rem;
+    }
+
     .contactContainer {
         width: 100%;
     }
@@ -1153,6 +1161,10 @@ p .about-a:hover {
     .Button {
         padding: 0.6rem 1rem;
         font-size: 15px;
+    }
+
+    .project-container {
+        margin-top: 25%;
     }
 
     .feature-p {
