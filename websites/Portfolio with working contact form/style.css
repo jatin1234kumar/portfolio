@@ -504,9 +504,6 @@ form input[type="submit"]:hover {
                 display 1s;
 }
 
-
-
-
 footer {
     width: 100%;
     height: 80px;
@@ -524,7 +521,7 @@ footer p {
 
 /* phone */
 
-@media only screen and (max-width: 816px) {
+@media only screen and (max-width: 890px) {
     .hamburger {
         display: block;
     }
