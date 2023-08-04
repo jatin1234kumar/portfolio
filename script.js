@@ -116,3 +116,8 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+
+function closeNavbar(){
+    var x = document.getElementById("myTopnav");
+    x.className = "topnav";
+}

@@ -924,10 +924,6 @@ p .about-a:hover {
 
     /* Contact section */
 
-    #contact {
-        padding: 50px;
-    }
-
     .contactInfo {
         margin-left: 50px;
     }
@@ -969,6 +965,10 @@ p .about-a:hover {
 }
 
 @media (max-width: 830px) {
+
+    #features {
+        padding: 9% 11% 3%;
+    }
 
     /* Heading section */
 
